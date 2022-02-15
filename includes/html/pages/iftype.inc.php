@@ -42,7 +42,7 @@ if ($if_list) {
         $port = cleanPort($port);
         $done = 'yes';
         unset($class);
-        $port['ifAlias'] = str_ireplace($type . ': ', '', $port['ifAlias']);
+        $port['ifAlias'] = str_ireplace($port['type'] . ': ', '', $port['ifAlias']);
         $port['ifAlias'] = str_ireplace('[PNI]', 'Private', $port['ifAlias']);
         $ifclass = ifclass($port['ifOperStatus'], $port['ifAdminStatus']);
         if ($bg == '#ffffff') {
