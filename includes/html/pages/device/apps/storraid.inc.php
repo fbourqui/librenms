@@ -87,7 +87,7 @@ $banner_text = match ($overall_sev) {
 };
 
 echo "<div class='alert {$banner_class}'><strong>" . htmlspecialchars($banner_text) . '</strong>'
-    . ' &nbsp; Last polled: ' . htmlspecialchars($ts_formatted) . '</div>';
+    . ' &nbsp; Last polled: ' . htmlspecialchars((string) $ts_formatted) . '</div>';
 
 // ── Summary cards ─────────────────────────────────────────────────────────────
 echo "
